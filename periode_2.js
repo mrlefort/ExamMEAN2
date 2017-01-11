@@ -12,10 +12,21 @@
  */
 
 
+
+// function getMe (callback){
+//     callback("hej fra getMe")
+// }
+//
+// getMe(function(data){
+//     console.log(data)
+// })
+
+
+
 // function _deleteCoffeeBrand(CoffeeBrandID, callback) {  // den tager 2 input parametre, brandId og callback.
 //         if (CoffeeBrandID) {
 //             CoffeeBrand.deleteCoffeeBrand(CoffeeBrandID, function (data2) {  //her sletter vi et brand og den funktion
-//                 //som gør det har en callback i sig, som den sender tilbage til denne funktion som "data2".
+//                 //som gør det, har en callback i sig, som den sender tilbage til denne funktion som "data2".
 //                 callback(data2) // Den kan vi så sende tilbage til den funktion som har kaldt _deleteCoffeeBrand.
 //             })
 //         } else callback(false) // eller bare sende false tilbage.
@@ -54,7 +65,10 @@
 // Question 3 - Explain, using relevant examples, about testing JavaScript code, relevant packages ---------------------
 // (Mocha etc.) and how to test asynchronous code.
 
-//I test mappen tester vi asynkron kode, samt andre eksempler, ved hjælp af Mocha. På ex2tests.js
+//I test mappen tester vi asynkron kode, samt andre eksempler, ved hjælp af Mocha.
+// Kør mocha test/ex2tests.js i terminalen for bare at teste javascript kode
+//Gå til spørgsmål 4 hvor vi tester asynkron kode.
+
 
 
 
@@ -65,7 +79,10 @@
 //Node/Express and show how you can "test" all the four CRUD operations
 //programmatically using for example the Request package
 
-//Se testAfApi.js for vores api tests. Husk at køre server på test/api.js
+//Se testAfApi.js for vores api tests. Husk at køre server på test/api.js.
+// I terminalen kør mocha test/testAfApi.js
+
+
 
 
 
@@ -73,7 +90,7 @@
 
 // Question 5 - Explain, using relevant examples, different ways to mock out databases, HTTPrequest etc. ---------------
 
-
+//I api laver vi et array. Det er lidt at mocke en database og i testAfApi tester vi HTTPrequests.
 
 
 
@@ -87,7 +104,7 @@
 
  I vores app bruger vi det således:
 
- Vores middleware består i at tjekker på tokens på requests. Bliver requestet ikke denied så bliver der kaldt next som
+ Vores middleware består i at tjekke på tokens på requests. Bliver requestet ikke denied så bliver der kaldt next som
  sender brugeren videre i sit request.
  */
 

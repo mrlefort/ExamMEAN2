@@ -11,9 +11,7 @@ var intUpdate = 0;
 
 app.post("/create", function(req, res) {
     var str = "create works " + ++intCreate
-
     arr.push(str);
-
     res.send(arr);
 
 });
@@ -37,12 +35,10 @@ app.put("/update", function(req, res) {
 });
 
 app.get("/get", function(req, res) {
-
     res.send(arr)
 });
 
 app.get("/", function(req, res) {
-
     res.send("it works ")
 });
 
